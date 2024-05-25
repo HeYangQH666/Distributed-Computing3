@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Signal Line ChartID1</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Random Signal Line ChartID1',
+    height: 600,
+    width: 800,
+    showlegend: true,
+    xaxis: {
+    title: 'Num',
+    },
+
+    yaxis: {
+    title: 'Value',
+    },
+
+};
+
+var trace0 =
+{
+x: ["10.0","11.0","12.0","13.0","14.0","15.0","16.0","17.0","18.0","19.0"],
+y: ["96.5058","122.1423","113.6568","109.3481","93.537","116.1752","103.1228","104.9743","106.3768","100.1214"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Gaussian Signal Value',
+};
+var trace1 =
+{
+x: ["10.0","11.0","12.0","13.0","14.0","15.0","16.0","17.0","18.0","19.0"],
+y: ["97.0761","103.8467","106.1194","109.1651","107.038","110.9719","107.168","105.4315","104.8372","106.1541"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Avg of Last 5 Nums',
+};
+var trace2 =
+{
+x: ["10.0","11.0","12.0","13.0","14.0","15.0","16.0","17.0","18.0","19.0"],
+y: ["32.7712","97.1503","110.7498","74.7599","114.0975","93.1345","66.0308","55.557","52.3147","29.4895"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Var of Last 5 Nums',
+};
+var trace3 =
+{
+x: ["10.0","11.0","12.0","13.0","14.0","15.0","16.0","17.0","18.0","19.0"],
+y: ["82.4845","82.4845","82.4845","82.4845","82.4845","82.4845","82.4845","82.4845","82.4845","82.4845"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Global Min',
+};
+var trace4 =
+{
+x: ["10.0","11.0","12.0","13.0","14.0","15.0","16.0","17.0","18.0","19.0"],
+y: ["131.2591","131.2591","131.2591","131.2591","131.2591","131.2591","131.2591","131.2591","131.2591","131.2591"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Global Max',
+};
+
+        var data = [ trace0, trace1, trace2, trace3, trace4];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>

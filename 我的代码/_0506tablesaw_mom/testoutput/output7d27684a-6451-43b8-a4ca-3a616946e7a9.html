@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Signal Line ChartID1</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Random Signal Line ChartID1',
+    height: 600,
+    width: 800,
+    showlegend: true,
+    xaxis: {
+    title: 'Num',
+    },
+
+    yaxis: {
+    title: 'Value',
+    },
+
+};
+
+var trace0 =
+{
+x: ["621.0","622.0","623.0","624.0","625.0","626.0","627.0","628.0"],
+y: ["120.5311","116.2982","105.0144","113.8402","108.6393","84.5297","121.5196","127.7018"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Gaussian Signal Value',
+};
+var trace1 =
+{
+x: ["621.0","622.0","623.0","624.0","625.0","626.0","627.0","628.0"],
+y: ["101.5007","101.8144","102.0115","102.2169","101.7959","101.2534","101.7259","102.1896"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Avg of Last 50 Nums',
+};
+var trace2 =
+{
+x: ["621.0","622.0","623.0","624.0","625.0","626.0","627.0","628.0"],
+y: ["208.3151","212.5803","211.8596","214.5671","200.1212","203.845","211.6109","224.7354"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Var of Last 50 Nums',
+};
+var trace3 =
+{
+x: ["621.0","622.0","623.0","624.0","625.0","626.0","627.0","628.0"],
+y: ["52.8116","52.8116","52.8116","52.8116","52.8116","52.8116","52.8116","52.8116"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Global Min',
+};
+var trace4 =
+{
+x: ["621.0","622.0","623.0","624.0","625.0","626.0","627.0","628.0"],
+y: ["139.8634","139.8634","139.8634","139.8634","139.8634","139.8634","139.8634","139.8634"],
+showlegend: true,
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Global Max',
+};
+
+        var data = [ trace0, trace1, trace2, trace3, trace4];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>
